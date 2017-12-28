@@ -1,0 +1,58 @@
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content drag-content="true">
+        <ion-nav-bar class="bar-calm">
+            <ion-nav-back-button class="no-text"></ion-nav-back-button>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left">
+        <ion-header-bar class="expanded" style="background: none !important;">
+            <div class="row" style="background: none !important; padding: 0!important; margin:20px;">
+            </div>
+            <br>
+        </ion-header-bar>
+        <ion-content class="has-expanded-header">
+            <ion-list>
+              <div class="list" style="margin-left: 20px !important; font-size: 16px !important;">
+                <br>
+                <ion-item nav-clear menu-close ui-sref="app.dashboard" class="my-divider">
+                  <div class="row" style="margin-left:0;height:38px">
+                    <div class="text-left"><span style="color:#fff;font-weight:normal;margin-top:2px; margin-left: -5px;">Home</span></div>
+                  </div>
+                </ion-item>
+              </div>
+
+            </ion-list>
+
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>
+
+<style scoped>
+    .bar.bar-header.expanded{
+        /*background: #000;*/
+        height: 90px;
+    }
+    .has-expanded-header{
+        margin-top:5px;
+    }
+    .has-expanded-header ion-item{
+        margin-bottom: -10px;
+
+    }
+    .my-divider{
+      border-top: 1px solid #ef473a;
+    }
+    .box_bottom{
+        background: #AAA;
+        height: 48px;
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+        left: 0;
+        bottom: -5px;
+    }
+    .item{
+        border-color: #ccc;
+    }
+</style>

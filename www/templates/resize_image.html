@@ -1,0 +1,75 @@
+<ion-view cache-view="false" view-title="Resize Image" hide-nav-bar="true" style="background: url('img/background3.jpg'); background-size: cover; color: white">
+  <ion-content>
+    <div class="text-center">
+      <button menu-toggle="left" class="white button button-icon button-clear ion-navicon" style="position:absolute;left:0;z-index:41567819;font-size:35px;color:#FFF;">  &nbsp;&nbsp;
+        <span style="text-transform: capitalize; margin-top: -10px; font-size: 17px;" class="text-center"> Resize Image</span>
+      </button>
+      <button ui-sref="app.dashboard" class="pull-right white button button-icon button-clear ion-ios-home" style="position:absolute;right:0;z-index:41567819;font-size:35px;color:#FFF;"></button>
+
+      <div class="ionic login">
+        <div class="flat" style="color: #FFF; background: #CCC; opacity: 0.2; height: 50px !important;"></div>
+      </div>
+
+      <h4 style="padding: 2%;" class="white"> Check Console </h4>
+
+      <div class="block text-left padding">
+        Image
+        <label data-tap-disabled="true" class="custom-file-upload" style="border: 1px solid #ccc; border-radius: 3px; width: 100%; height: 150px;">
+          <input type="file" name="file" onchange="angular.element(this).scope().photoChanged(this.files)" />
+          <div class="row" style="padding: 0.4px !important; padding-top: 1px !important; cursor: pointer" >
+            <div class="col-66" style="padding: 0 !important; float: left;">
+              <img style="float: left; border-top-left-radius: 20px; border-bottom-left-radius: 20px;" ng-src="{{ sendData.img }}" width="100%" />
+            </div>
+          </div>
+        </label>
+      </div>
+
+      <div class="block">
+        <div>Resized Image</div>
+           <img style="float: left; border-top-left-radius: 20px; border-bottom-left-radius: 20px;" ng-src="{{ sendData.img }}" width="100%" />
+      </div>
+
+    </div>
+  </ion-content>
+
+
+</ion-view>
+
+<style>
+  textarea {
+    resize: none;
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+
+  .custom-file-upload {
+    border: none;
+    display: inline-block;
+    padding:  0;
+    cursor: pointer;
+  }
+
+  .shadow
+  {
+    display:block;
+    position:relative;
+  }
+
+  .shadow:after
+  {
+    display:block;
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    -moz-box-shadow:inset 0px 0px 7px 7px rgb(41,77,121);
+    -webkit-box-shadow:inset 0px 0px 7px 7px rgb(41,77,121);
+    box-shadow:inset 0px 0px 7px 7px rgb(41,77,121);
+
+  }
+</style>

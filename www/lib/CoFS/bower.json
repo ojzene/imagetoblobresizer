@@ -1,0 +1,39 @@
+{
+	"name": "CoFS",
+	"version": "0.4.3",
+	"authors": [
+		"exos <oscar@gentisoft.com>"
+	],
+	"description": "Manage the HTML5 Native File API *like a Sir*.",
+	"main": "dist/CoFS.min",
+	"moduleType": [
+		"amd"
+	],
+	"keywords": [
+		"files",
+		"HTML5 File API",
+		"fs",
+		"cordova",
+		"phonegap"
+	],
+	"license": "GPL2",
+	"ignore": [
+		"**/.*",
+		".git",
+		".gitignore",
+		".jshintr",
+		"package.json",
+		"GruntFile.js",
+		"examples",
+		"extra",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"buffer": "~3.24.10",
+		"async": "~0.9.2",
+		"eventemitter2": "~0.4.14"
+	}
+}
